@@ -1,0 +1,195 @@
+<!DOCYTPE HTML>
+    <html lang="en-GB">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ayesaac</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab:wght@900&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+            :root {
+                font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                text-justify: newspaper;
+                text-align: justify;
+                word-break: normal;
+                line-height: 1.35;
+                font-size: 14px;
+                hyphens: auto;
+            }
+
+            * {
+                box-sizing: border-box;
+                border: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            html {
+                background-color: #212;
+                color: #CCC;
+            }
+
+            #header {
+                max-width: 31rem;
+                margin: 0 auto;
+                width: 90%;
+            }
+
+            h1 {
+                font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 0.15em;
+                margin: 30vh 0 1.5rem;
+                text-align: center;
+                font-weight: 900;
+                font-size: 3rem;
+            }
+
+            hr {
+                border-bottom: 1px solid;
+                margin: 0 2rem;
+            }
+
+            .expando-text {
+                letter-spacing: 0.5em;
+                font-weight: 900;
+            }
+
+            p {
+                margin: 1rem 0;
+            }
+
+            a,
+            a:link,
+            a:visited {
+                color: inherit;
+                text-decoration: none;
+                transition: color 0.5s;
+            }
+
+            a:hover {
+                color: #FFF;
+            }
+
+            .tagline {
+                text-align: center;
+            }
+
+            .avoid-word-break {
+                display: inline-block;
+            }
+
+            #desolate-shores-tease-images {
+                position: relative;
+                max-width: 100px;
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            #desolate-shores-tease-images img {
+                image-rendering: crisp-edges;
+                width: 100%;
+            }
+
+            #desolate-shores-tease-images .hide-until-hover {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .hide-until-hover {
+                visibility: hidden;
+            }
+
+            .hide-until-hover-container:hover .hide-until-hover {
+                visibility: visible;
+            }
+
+            #desolate-shores-tease p {
+                letter-spacing: 1px;
+                text-align: center;
+                font-size: 0.8rem;
+                margin-top: 0;
+                color: #AAA;
+            }
+
+            @media (max-width: 500px) {
+                :root {
+                    font-size: 12px;
+                }
+
+                h1 {
+                    margin-bottom: 1rem;
+                    font-size: 2rem;
+                }
+
+                hr {
+                    margin: 0 1rem;
+                }
+            }
+
+            @media (max-width: 300px) {
+                :root {
+                    font-size: 12px;
+                }
+
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+
+            @media (max-width: 150px) {
+                :root {
+                    font-size: 10px;
+                }
+
+                h1 {
+                    font-size: 1rem;
+                }
+
+                hr {
+                    margin: 0 5px;
+                }
+            }
+
+            @media (max-height: 200px) {
+                h1 {
+                    margin-top: 20vh;
+                }
+            }
+
+            @media (max-height: 150px) {
+                h1 {
+                    margin-top: 1rem;
+                }
+            }
+
+            @media (max-height: 55px) {
+                h1 {
+                    margin-top: 0.5rem;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <section id="header">
+            <h1><a href="">Ayesaac</a></h1>
+            <hr />
+            <p class="tagline">
+                He<a class="expando-text" href="https://github.com/ayesaac/"> de&shy;ve&shy;lop</a>.
+            </p>
+            <section id="desolate-shores-tease">
+                <section id="desolate-shores-tease-images" class="hide-until-hover-container">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJUExURQAAAN3d3QAAAIiYPJ0AAAADdFJOU///ANfKDUEAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMjSURBVGhD7ZPZluMgDESn+/8/eqhFGGz25MyZBxeJEEKuC+30n99/oBeypReypReypReypReypf8f8vNTzz0dQn7gq0/MLLV1BoGdMDmwxM2njiDp0PK0O5OoNnQAkRVtMRhc8N5d+xAapmDzW4r5oW1ImIV1WmiwhF1mlXYhdM2plhouXumlTUhlgTR9PYUalCNI/IxSzB8sWf4YYgYGrBWu5NqutQtRoFeEnMSOQqElSDqphQU+5ShSLvQttQKpTPDlhysHzpHhU2sB4kuEWEIxWzowQTtipTkknr8Gis6fi5amEB2/EstpOBZpR0MIDfH0fXAvNzhFta0RhKdGeCjtwZUhJ33KFAKD5qCvIEjQ2NPZTVAnhQQHP9XQ+U24aW+sMHd0epN8doURYgSRP+fe8K7CQF0ITzuRbiDWSD0ITzob2XrM6EF81JncfQZJDxUH7g58on+kDgR/7/mIq0wY37nJGWT1nXwGWdTHEBz0j5USHtwVLdHjVk1djW9CS+lW0eorN8lXiYtEBRl63Kqpq/FNZvrOTUZCj1s1dTWAeB7pc4hPG+lDhfmE0oPQpCI1fmqfQXhM2BOiyf78L4kfm9urszQ0gCjJj4vAf8Tbv0nuZd5QC6JuupNR34QUVr8BUSq7JDMkVi5XZ7n3piZEEU8geLK9xHLhuA1xIyMf09r2EiveoHLawgwg9Kc02R/iumQcQ5TTri3XeYiC+OzfuEkttyHyy2cobZTauEmacOCYyqpmawcCQEAihn3O1ZgDlbZuakBabTDJQ580Qinzgod5aBUCYzkjU7iUFxuQBibsBcB+w6wFgFYhtOU3EB9B3IhDQ1qhnM1j3NRDNG+iXjNqCEYkD21BaoN4NHtPEJxuvOY7KXuuHIkxDanPEaHQHWLPGnMt7o+H4rEiFhq++JwpGaiEPLu7Lx7KGYgZpQV0rZ1weqr54jvdcKv2XEhyoaPmi685M4u5OpBawNxQ8+MXWoIYg1kLATRhxWVfC5DK4eY49adWbrJkNNLan+t5/qoyO8XiO7lUuEc2QRxATvRCtvRCtvRCtvRCNvT7+xeF0kfGP8joogAAAABJRU5ErkJggg=="
+                        alt="Pixel Art Desolate Shores Doodle: A tiny stylized black & white island with a palm tree, house, and some crops." />
+                    <img class="hide-until-hover"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAMUExURQAAAN3d3X8AAAAAAH3ZL6QAAAAEdFJOU////wBAKqn0AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAD2UlEQVRoQ+2UWZLkIAxEy67733mUKYlVLMYTE/NRiUuILR8Yd3++/0D/CeSy+oXmEAD890KLk4i7Pq+0el0Xy0vNIKX5K9D0JHC+Lka2T7V+XW8JovXFp3iuBmJ28o5MdZOt58oQ8ymNcn5qrypPEjH8E35FWd+JPq+0gPwd/SCUfyarb/sQws/QPwlLx6gzCOwUkwK7ONjrCGJ/T8nd/pSGZzmAqBVtURisw8ZaRZBwYhINJZh5k6LuFEDi3bjcDBmLVdqFUWaVesjkKxHRNaXa1GKdOc16+LoqC6Tys8oVUDoIvpHxWdTBJ0hMD5rs3oGQYmknY6BIwollkodrRa9rLK6GISoPKfERDYW2IDicCg08ZSlSNvRXagdSmeDHhy0LrD3DUyuGVNPsEC52oTNZWmCC6YiV1hBfnws6Le8bkUKI7Zfi7muxW4rFIh1oCmGN1W3hWJpgKXpjRRBZZT5SI3SSMbgypGRMWUJgEBb6cgITTBzp7CToJwXDHrg21PlJfJIGbQw0u3hCEEIlf85EHGoAQVAI6lGxUQ0ThRAu3JDthpiZBnfCzS1Lsp4zIsh1fcDZka14DhHGRxYVGx4WPLrG6oE6CBgfbHKj+FEWjBEEC9cFD9doNVT8unCULdkSrYaKIJZs6BzylZN89ANjJsK3oCqanGtL5urvhO7qoTgVB3OPto4hJk3Msrik3MRkW6PVUMFJ5Lnv25pznUKwQhj3zX3PpHNtyVQ9RJYoxJoznUOUondiHaEK8wUlgojwslCbG6VXTlnPO4ifxM7ACp+U/okIhd0JX+0lUAi5r1t+yLhal8PaGbYqQxiGmAgCBF9Yc5LPB98DM/a+g8jNp4VqJ5Ij4KO7eRb2ZFfL0txGIURemK1AsErMCeGR2F04PobIRLwvTucyXYgD4CCksMcGqJRGmBiiFfwprYTB4gcpGccQzWnnkpNYBlk/N1EQe8yDk0D5P5pNQ+SPaygdKPXgJFJhw16VvVqbnkAAcIhHt0+5TkyBkqFGASSaBpNU9JHikswa3EynXQiM1RmZhqzUeAAJMG6vAIwHZhEA2oXQlj9HvILYRGwa0ha6k7mXRiNEeBKda4waguJJp0eQ2sCXJu8FglXDC++knJNzJIYJpPMsIhRqIeZZY3KjXe7yZUUsNL34lGkyUQnpZw8vHkoZiAmlDSi3LWHVK7z4wWy4VWPWIbKOgcKLrzkri7UGkFrANKj19gttQQyDWhsK0AotNsfagFQOjePSn9o5yZbRTHuvq99/1bPaxeadZBXuni0QB5AT/SCP9IM80g/ySD/IA32/fwClc2fNVXe/agAAAABJRU5ErkJggg==" />
+                </section>
+                <p title="Desolate Shores">Soon.</p>
+            </section>
+        </section>
+    </body>
+
+    </html>
